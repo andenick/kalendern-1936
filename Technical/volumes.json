@@ -1,0 +1,35 @@
+{
+  "_comment": "Year-agnostic Kalendern volume registry. kind=ocr_pdf -> mine the embedded OCR text layer (GUB digitisations); kind=image_scans -> run the image OCR pipeline (s0->s2->dots.ocr). Each volume produces Outputs/Data/kalendern_<year>_* in one standard shape.",
+  "volumes": [
+    {
+      "volume_id": "taxkal_1912",
+      "year": 1912,
+      "kind": "ocr_pdf",
+      "source_pdf": "Inputs/GUB0128142.pdf",
+      "n_pages": 751,
+      "city_scope": "multi_city",
+      "source": "Goteborgs universitetsbibliotek (GUB) digitisation",
+      "status": "raw"
+    },
+    {
+      "volume_id": "taxkal_1914",
+      "year": 1914,
+      "kind": "ocr_pdf",
+      "source_pdf": "Inputs/GUB0126654.pdf",
+      "n_pages": 1065,
+      "city_scope": "multi_city",
+      "source": "Goteborgs universitetsbibliotek (GUB) digitisation",
+      "status": "raw"
+    },
+    {
+      "volume_id": "stockholm_1936",
+      "year": 1936,
+      "kind": "image_scans",
+      "image_dir": "Inputs/Images",
+      "n_pages": 417,
+      "city_scope": "greater_stockholm",
+      "source": "Stockholm Stadsarkiv (SSA) photographs",
+      "status": "processed"
+    }
+  ]
+}

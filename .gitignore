@@ -1,0 +1,117 @@
+# ── Kalendern 1936 public release .gitignore (pipeline code only) ───────────
+# Excludes ~18.6 GB of page scans, OCR model weights, venvs, and outputs.
+
+# ---- Large data / scans / outputs ----
+/Inputs/
+/Outputs/
+/Handoffs/
+**/eynollah_out/
+**/eynollah_models/
+**/kraken_models/
+**/calamari_models/
+**/words_1912/
+**/words_1914/
+**/dataset_1912/
+**/dataset_1914/
+Technical/vlm/chunks/
+Technical/vlm/hdr_chunks/
+
+# ---- Virtual environments (third-party, with their own scripts/.git) ----
+**/.venv-surya/
+**/eynollah_venv/
+**/kraken_venv/
+**/viklofg_venv/
+Technical/ocr_engines/calamari/
+Technical/ocr_engines/doctr/
+Technical/ocr_engines/kraken/
+Technical/ocr_engines/paddle/
+.venv/
+venv/
+env/
+
+# ---- Model weights / large binaries ----
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+*.gguf
+*.ckpt
+*.h5
+*.tar
+*.7z
+
+# ---- Data file types (anywhere) ----
+*.parquet
+*.dta
+*.rds
+*.rdata
+*.RData
+*.duckdb
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.gz
+*.pdf
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.xlsx
+*.xls
+# CSVs: ignore by default (generated manifests embed absolute output paths)
+*.csv
+!**/SCHEMA_*.md
+
+# ---- Logs / caches / build ----
+*.log
+*.err
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+dist/
+build/
+*.egg-info/
+
+# ---- Secrets / keys ----
+.env
+*.env
+!.env.example
+**/api_keys*
+*.key
+*.pem
+credentials*
+secrets*
+
+# ---- Internal agent / process / planning docs ----
+.claude/
+CLAUDE.md
+.cursor/
+AGENTS.md
+**/Handoffs/
+**/HANDOFF_*.md
+**/PROGRESS_LOG.md
+*_REBUILD_PLAN_*.md
+*_PLAN.md
+*_PLAN_*.md
+**/OVERNIGHT_AGREEMENT.md
+**/OVERNIGHT_PIPELINE_BUILD.md
+**/PIPELINE_STATUS_*.md
+**/CAMPAIGN_COMPLETION_REPORT.md
+**/old_instructions.md
+**/QWEN_VS_HDARP_COMPARISON.md
+**/ALL_PAGES_STATUS.csv
+**/STAGE02_SMOKE.md
+**/SURYA_SMOKE.md
+**/SWEDISH_OCR_SURVEY.md
+**/SWEDISH_OCR_ENGINES.md
+**/KALENDERN_*_READING_PLAN_*.md
+
+# ---- nested third-party repos ----
+**/.git/

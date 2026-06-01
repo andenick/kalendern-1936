@@ -1,0 +1,20 @@
+# Kalendern 1936 — pipeline dependencies
+# Core
+numpy>=1.24
+Pillow>=10.0
+opencv-python>=4.8
+PyMuPDF>=1.23          # `fitz` — read embedded OCR text layers from GUB PDFs
+
+# OCR engines (install the ones you intend to run; all are optional and heavy).
+# Each engine pulls its own large model weights on first use.
+# surya-ocr>=0.6        # layout + text detection/recognition (run_surya.py)
+# paddleocr>=2.7        # PaddleOCR (ocr_engines/run_paddle*.py)
+# python-doctr>=0.8     # docTR (ocr_engines/run_doctr.py)
+
+# Optional: LoRA fine-tuning / VLM transcription (GPU)
+# torch>=2.1
+# transformers>=4.40
+
+# Note: Tesseract, Kraken, Calamari, eynollah and the GGUF VLM servers
+# (dots.ocr / GLM-OCR / Qwen3-VL via llama.cpp) are external tools — install
+# separately and point the env vars at them (see README).
