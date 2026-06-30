@@ -157,20 +157,33 @@ This analysis examines the first 100 pages of the 1936 Stockholm Kalendern direc
 
 ### Highest-Earning Occupations
 
-**Top 10 by Average Income (minimum 5 instances):**
+> **CAVEAT — OCR/data artifacts, not validated findings.** The income figures in this table come from
+> an unvalidated ~100-page OCR sample and have NOT been cross-checked against the source pages. Two rows
+> are demonstrably artifacts and should be read as such, not as economic findings:
+> - **Rank 1 — Gardener (trädgårdsm.), 1,542,150 SEK avg**: physically implausible (a gardener out-earning
+>   bank/insurance directors by ~40×). This is an OCR misread of income digits and/or a misparse of the
+>   occupation token, inflating the average across only 11 entries. It is **not** evidence that gardeners
+>   were the highest earners.
+> - **Rank 2 — PhD (fil. d:r), 137,848 SEK avg**: similarly inflated by one or more OCR digit errors over a
+>   small (n=12) group.
+>
+> The same caution applies to the 16,905,990 SEK maximum noted above. Treat the table below as illustrative
+> of the pipeline's output on an early sample, not as a ranked list of real 1936 occupational incomes.
 
-| Rank | Occupation | Count | Avg Income (SEK) |
-|------|------------|-------|------------------|
-| 1 | Gardener (trädgårdsm.) | 11 | 1,542,150 |
-| 2 | PhD (fil. d:r) | 12 | 137,848 |
-| 3 | Count (greve) | 5 | 72,900 |
-| 4 | Company (A.-B.) | 58 | 41,330 |
-| 5 | Vice Director (v. dir.) | 11 | 38,746 |
-| 6 | Bank Director (bankdir.) | 12 | 36,357 |
-| 7 | Insurance Director (försäkr.-dir.) | 5 | 34,404 |
-| 8 | Chief Engineer (övering.) | 7 | 33,414 |
-| 9 | Civil Engineer (civilino) | 5 | 32,572 |
-| 10 | Former Wholesaler (f. d. grossh.) | 7 | 30,177 |
+**Top 10 by Average Income (minimum 5 instances) — see CAVEAT above; rows 1–2 are OCR artifacts:**
+
+| Rank | Occupation | Count | Avg Income (SEK) | Note |
+|------|------------|-------|------------------|------|
+| 1 | Gardener (trädgårdsm.) | 11 | 1,542,150 | OCR/data artifact — implausible; not a real finding |
+| 2 | PhD (fil. d:r) | 12 | 137,848 | Likely inflated by OCR digit errors (small n) |
+| 3 | Count (greve) | 5 | 72,900 | |
+| 4 | Company (A.-B.) | 58 | 41,330 | |
+| 5 | Vice Director (v. dir.) | 11 | 38,746 | |
+| 6 | Bank Director (bankdir.) | 12 | 36,357 | |
+| 7 | Insurance Director (försäkr.-dir.) | 5 | 34,404 | |
+| 8 | Chief Engineer (övering.) | 7 | 33,414 | |
+| 9 | Civil Engineer (civilino) | 5 | 32,572 | |
+| 10 | Former Wholesaler (f. d. grossh.) | 7 | 30,177 | |
 
 **Notable Income Insights:**
 - **Directors (dir.)** average 21,561 SEK - 2.4x the median
